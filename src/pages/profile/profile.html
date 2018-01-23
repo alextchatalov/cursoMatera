@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-grid class="center p-0">
+        <ion-row>
+          <ion-col>
+              <button ion-button>
+                  <ion-icon name="arrow-back"></ion-icon>
+                </button>
+          </ion-col>
+
+          <ion-col offset-6>
+              <button ion-button>
+                  <ion-icon name="checkmark"></ion-icon>
+                </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-card>
+          <ion-card-header>
+            Dados Pessoais
+          </ion-card-header>
+          <ion-card-content>
+              <ion-item>
+                  <ion-label fixed>Nome</ion-label>
+                  <ion-input type="text" value=""></ion-input>
+              </ion-item>
+
+                <ion-item>
+                    <ion-label fixed>Sobrenome</ion-label>
+                    <ion-input type="text" value=""></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Nascimento</ion-label>
+                    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MM YYYY"></ion-datetime>
+                </ion-item>
+          </ion-card-content>
+        </ion-card>
+    
+</ion-content>
