@@ -8,23 +8,23 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button full>
-      <ion-icon name="ios-contact"> Perfil</ion-icon>
+    <button ion-button full (click)="goToProfilePage()">
+      <ion-icon class="center" name="ios-contact"> Perfil</ion-icon>
     </button>
 
-    <button ion-button full>
+    <button ion-button full (click)="goToListPage()">
       <ion-icon ios="ios-list" md="md-list"> List</ion-icon>
     </button>
 
-    <button ion-button full>
+    <button ion-button full (click)="goToRelatorioPage()">
       <ion-icon ios="ios-document" md="ios-document-outline"> Relatório</ion-icon>
     </button>
 
-    <button ion-button full>
+    <button ion-button full (click)="goToScannerPage()">
       <ion-icon ios="ios-qr-scanner" md="md-qr-scanner"> Scanner</ion-icon>
     </button>
 
-    <button ion-button full>
+    <button ion-button full (click)="goToLoginPage()">
       <ion-icon ios="ios-log-in" md="ios-log-in-outline"> Login</ion-icon>
     </button>
 </ion-content>
