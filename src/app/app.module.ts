@@ -1,36 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { ProfilePage } from '../pages/profile/profile';
-
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import { PROVIDERS, NATIVE_PROVIDERS, MODULES, NATIVE_MODULES } from './app.imports';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage,
-    ListPage,
-    ProfilePage
+    MyApp
   ],
   imports: [
-    BrowserModule,
+    MODULES,
+    NATIVE_MODULES,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage,
-    ListPage,
-    ProfilePage
+    MyApp
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
+    PROVIDERS,
+    NATIVE_PROVIDERS,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
