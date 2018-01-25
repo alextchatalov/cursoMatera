@@ -1,5 +1,5 @@
 import { ToastController, Toast } from 'ionic-angular';
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ToastService {
