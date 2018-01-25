@@ -1,5 +1,5 @@
 // Providers
-
+import { ToastService } from '../pages/providers/utils/toast.service';
 // Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +15,9 @@ import { LoginPageModule } from '../pages/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
 
 
-export const PROVIDERS = [];
+export const PROVIDERS = [
+    ToastService
+];
 
 export const NATIVE_PROVIDERS = [
     StatusBar,
