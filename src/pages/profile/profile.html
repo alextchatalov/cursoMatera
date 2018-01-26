@@ -18,7 +18,7 @@
           </ion-col>
 
           <ion-col offset-6>
-              <button ion-button>
+              <button ion-button >
                   <ion-icon name="checkmark"></ion-icon>
               </button>
           </ion-col>
@@ -28,7 +28,9 @@
       <ion-grid class="center p-0">
         <ion-row>
           <ion-col>
-            <ion-img width="100" height="100" src="assets/imgs/avatar.png"></ion-img>
+            <button ion-button (click)= "openGallery()">
+               <ion-img width="100" height="100" src="assets/imgs/avatar.png"></ion-img>
+          </button>
           </ion-col>
         </ion-row>
       </ion-grid>

@@ -4,6 +4,7 @@ import { AlertService } from '../../src/providers/utils/alert.service';
 // Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from '@ionic-native/camera';
 
 // Modules
 import { ProfilePageModule } from '../pages/profile/profile.module';
@@ -14,7 +15,7 @@ import { ScannerPageModule } from '../pages/scanner/scanner.module';
 import { LoginPageModule } from '../pages/login/login.module';
 // Native Modeles
 import { BrowserModule } from '@angular/platform-browser';
-
+import { IonicStorageModule } from '@ionic/storage';
 
 export const PROVIDERS = [
     ToastService,
@@ -23,7 +24,9 @@ export const PROVIDERS = [
 
 export const NATIVE_PROVIDERS = [
     StatusBar,
-    SplashScreen
+    SplashScreen,
+    Camera,
+    
 ]; 
 
 export const MODULES = [
@@ -36,5 +39,6 @@ export const MODULES = [
 ];
 
 export const NATIVE_MODULES = [
-    BrowserModule
+    BrowserModule,
+    IonicStorageModule.forRoot()
 ];
