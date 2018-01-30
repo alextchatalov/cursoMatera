@@ -15,6 +15,9 @@ export class ProfilePage {
 
   public profileFilePicture: string;
   public placeHolderPicture: string;
+  public user = {
+    imageUrl: null
+  }
 
   constructor(public navCtrl: NavController, 
               private alertService: AlertService,
@@ -48,7 +51,7 @@ export class ProfilePage {
     localStorage.setItem("imageUrl", this.profileFilePicture);
     // Opção de adicionar no storage do Ionic
     this.storage.set("imageUrl", this.profileFilePicture);
-
+    this.user.imageUrl = this.profileFilePicture;
   }
 
   exibirMensagem() {
