@@ -8,5 +8,20 @@
 </ion-header>
 
 <ion-content>
-    Pagina do Login
+
+  <ion-item>
+    <ion-label floating>Usuário</ion-label>
+    <ion-input type="text" [(ngModel)] = "formLogin.login"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input type="password" [(ngModel)] = "formLogin.senha"></ion-input>
+  </ion-item>
+  
+  <br/>
+
+  <button ion-button full (click)="realizarLogin()">
+      <ion-icon ios="ios-done-all" md="md-done-all">Login</ion-icon>
+    </button>
 </ion-content>
