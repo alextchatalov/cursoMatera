@@ -5,6 +5,7 @@ import { ScannerServiceProvider } from '../../src/providers/scanner-service/scan
 import { AuthServiceProvider } from '../../src/providers/auth-service/auth-service';
 import { UserServiceProvider } from '../../src/providers/user-service/user-service';
 import { ReportServiceProvider } from '../../src/providers/report-service/report-service';
+import { TokenStorage } from '../../src/providers/auth-service/token-storage-service';
 // Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +33,8 @@ export const PROVIDERS = [
     ScannerServiceProvider,
     AuthServiceProvider,
     UserServiceProvider,
-    ReportServiceProvider
+    ReportServiceProvider,
+    TokenStorage
 ];
 
 export const NATIVE_PROVIDERS = [
